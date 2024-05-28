@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    padding-top: 7%;
+    background-color: hsl(206, 47%, 93%);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 50%;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+div {
+    padding: 40px;
+}
+
+.join {
+    grid-area: 1 / span 2;
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.join>h1 {
+    color: hsl(179, 62%, 43%);
+}
+
+.join>h3 {
+    color: hsl(71, 73%, 54%);
+}
+
+.sign {
+    grid-area: 2/1;
+    color: white;
+    background-color: hsl(179, 61%, 44%);
+    border-bottom-left-radius: 10px;
+}
+
+button {
+    color: white;
+    background-color: hsl(71, 73%, 54%);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+    width: 210px;
+    height: 40px;
+    border: none;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+button:hover {
+    background-color: transparent;
+    color: hsl(0, 0%, 95%);
+    border: solid white 2px;
+}
+
+.why-us {
+    grid-area: 2/2;
+    color: white;
+    background-color: hsl(179, 47%, 52%);
+    border-bottom-right-radius: 10px;
+}
+
+/* grid-area: 2 / span 3; */
+/* text-align: center; */
+/* justify-content: center; */
